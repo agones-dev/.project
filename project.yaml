@@ -1,41 +1,47 @@
 # .project metadata for Agones
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set slack_channels
-# TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "agones"
 name: "Agones"
 description: "Agones is a library for hosting, running, and scaling dedicated game servers on Kubernetes."
 type: "project"
-project_lead: "markmandel" # TODO: AUTO-DETECTED — please verify
-# TODO: Set CNCF Slack channel(s)
-# slack_channels:
-#   - name: "#agones"
-#     primary: true
+project_lead: "markmandel"
+
+slack_channels:
+  - name: "#users"
+    workspace: "agones"
+    link: "https://join.slack.com/t/agones/shared_invite/zt-2mg1j7ddw-0QYA9IAvFFRKw51ZBK6mkQ"
+    primary: true
+  - name: "#agones"
+    workspace: "cncf"
+    link: "https://slack.cncf.io"
 
 maturity_log:
   - phase: "sandbox"
     date: "2025-12-21T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/469" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/469"
 
 repositories:
   - "https://github.com/agones-dev/agones"
 
 website: "https://agones.dev/site/"
 
-artwork: "https://landscape.cncf.io/logos/cncf.svg"
+mailing_lists:
+  - "https://groups.google.com/forum/#!forum/agones-discuss"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/agones-dev/agones/blob/main/ADOPTERS.md"
+artwork: "https://raw.githubusercontent.com/agones-dev/agones/refs/heads/main/docs/logos/web/png/low/Full-Color.png"
 
+adopters:
+  path: "https://agones.dev/site/"
 
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "agones-dev/agones"
+package_managers:
+  helm: "https://agones.dev/chart/stable"
+  docker: "us-docker.pkg.dev/agones-images/release"
+  go: "agones.dev/agones/sdks/go"
+  nuget: "AgonesSDK"
+  npm: "@google-cloud/agones-sdk"
+  cargo: "agones"
 
 social:
   twitter: "https://twitter.com/agonesdev"
@@ -51,19 +57,27 @@ governance:
     path: "https://github.com/agones-dev/agones/blob/main/CONTRIBUTING.md"
   code_of_conduct:
     path: "https://github.com/agones-dev/agones/blob/main/code-of-conduct.md"
+  governance_doc:
+    path: "https://github.com/agones-dev/agones/blob/main/GOVERNANCE.md"
 
 legal:
   license:
     path: "https://github.com/agones-dev/agones/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
 documentation:
   readme:
     path: "https://github.com/agones-dev/agones/blob/main/README.md"
+  api:
+    path: "https://agones.dev/site/docs/reference/agones_crd_api_reference/"
+  architecture:
+    path: "https://agones.dev/site/docs/advanced/system-diagram/"
+  support:
+    path: "https://agones.dev/site/community/"
 
 landscape:
   category: "Orchestration & Management"
