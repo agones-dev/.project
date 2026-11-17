@@ -30,7 +30,7 @@ website: "https://agones.dev/site/"
 mailing_lists:
   - "https://groups.google.com/forum/#!forum/agones-discuss"
 
-artwork: "https://raw.githubusercontent.com/agones-dev/agones/refs/heads/main/docs/logos/web/png/low/Full-Color.png"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/agones"
 
 adopters:
   path: "https://agones.dev/site/"
